@@ -1,0 +1,11 @@
+<div class="card shadow">
+    <ul class="form-group">
+        <li class="form-group-item" *ngFor="let mascota of listMascotas">
+            <a (click)="selectMascotas(mascota)"></a>
+
+        </li>
+    </ul>
+
+    <app-mascotas-detail [mascota]="selectedMascota"></app-mascotas-detail>
+
+</div>
